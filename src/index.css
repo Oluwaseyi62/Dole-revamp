@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-dolevian-charcoal bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif leading-tight;
+  }
+  
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 font-medium transition-all duration-300 rounded-md focus:outline-none;
+  }
+  
+  .btn-primary {
+    @apply btn bg-dolevian-gold text-white hover:bg-dolevian-lightGold;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-transparent border border-dolevian-charcoal text-dolevian-charcoal hover:bg-dolevian-charcoal hover:text-white;
+  }
+  
+  .input-field {
+    @apply w-full p-3 border border-dolevian-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-dolevian-gold/50 focus:border-dolevian-gold;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-serif font-medium mb-6;
+  }
+  
+  .countdown-unit {
+    @apply flex flex-col items-center bg-white border border-dolevian-gray-200 rounded-md p-4 w-20 md:w-24 shadow-sm;
+  }
+  
+  .countdown-number {
+    @apply font-serif text-2xl md:text-3xl font-bold;
+  }
+  
+  .countdown-label {
+    @apply text-xs md:text-sm text-dolevian-gray-500 uppercase tracking-wide;
+  }
+  
+  .product-card {
+    @apply bg-white rounded-md overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md;
+  }
+  
+  .product-image-container {
+    @apply relative overflow-hidden;
+  }
+  
+  .product-image {
+    @apply w-full h-64 object-cover transition-transform duration-700 hover:scale-105;
+  }
+  
+  .product-tag {
+    @apply absolute top-4 left-4 bg-dolevian-gold text-white text-xs px-3 py-1 rounded;
+  }
+}
