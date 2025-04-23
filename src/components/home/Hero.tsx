@@ -8,10 +8,10 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-10 bg-dolevian-charcoal/30"></div>
       <div
         className="absolute inset-0 bg-center bg-cover"
-        style={{ backgroundImage: `url('/images/Dole4.jpg')` }}
+        style={{ backgroundImage: `url('/images/Dole6.jpg')` }}
       ></div>
       <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white container-custom">
-        <img src="/images/dolevian-logo.png" alt="Dolevian" className="w-64 mb-6 animate-slide-down" />
+        
         <p className="max-w-xl mx-auto mb-8 text-lg md:text-xl animate-slide-down" style={{ animationDelay: '0.2s' }}>
           Dare to be you. Express your unique style with our premium streetwear collection.
         </p>
